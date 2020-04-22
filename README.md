@@ -1,15 +1,23 @@
-# MongoDB Cookbook
+# MongoDB Cookbook 'mongo'
 
-Description:
+DESCRIPTION:
 
-This cookbook installs mongodb from source. It creates its own package and then
-installs it. The recipe also creates the config files and the service files with
-dynamic input of variables.
+- This repo will include the details on using the MongoDB. This cookbook is set
+to install MongoDB from its source, as it creates its own package and then installs it.
+
+## What is Chef?
+
+- Chef is an Configuration Management Tool, chef allows files on the machine to be
+configured, and it ensures that the machine is responding correctly and accordingly.
+
+## How to use Cookbook?
+To use the coookbook you need to make sure that 
 
 ## Installs
-- Monngodb
 
-## Options and variables
+- MonngoDB
+
+## Options and Variables
 
 Changes are made in the 'attributes' file
 - Changing the port:
@@ -17,23 +25,23 @@ Changes are made in the 'attributes' file
 default['mongo']['port'] = <new_value_here>
 ````
 
-## Commands
+## Commands Used For Testing in Chef
 
-## Test Locally
+### Test Locally
 
-1. Running my Unit Test:
+1. Running the Unit Test:
 ````
 chef exec rspec
 ````
 
-2. Running my Intergration Test and closing the machine:
+2. Running the Integration Test and closing the machine:
 ````
 kitchen test
 ````
 
-## Test in AWS
+### Test in AWS
 
-Running Intergration Test in AWS:
+Running Integration Test in AWS:
 ````
 KITCHEN_YAML=kitchen_cloud.yml kitchen test
 ````
