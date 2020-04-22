@@ -11,20 +11,17 @@ to install MongoDB from its source, as it creates its own package and then insta
 configured, and it ensures that the machine is responding correctly and accordingly.
 
 ## How to use Cookbook?
-To use the cookbook you need to make sure that
 
-CAMILE CAMILE CAMILE
+- In a small and detailed concept, in order to run the recipe file we will need to
+provision the code on to the machine as it will allow us to test the environment.
 
-De J M
+## Pre-requisites (Things We've Used):
+- Chef
+- GitHub
+- AWS CLI Version 2
 
-De J M
-
-De J M
- 
-
-## Installs
-
-- MonngoDB
+## Installs:
+- MongoDB
 
 ## Options and Variables
 
